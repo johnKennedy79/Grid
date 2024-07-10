@@ -21,13 +21,14 @@ see https://cssgridgarden.com/ */
 
 /* Workshop */
 img {
-  height: 200px;
   width: 200px;
+  height: 200px;
 }
 .kittens {
   display: grid;
   grid-template: 1fr 2fr 2fr 2fr/ 1fr 1fr 1fr;
   border: solid 1px black;
+  column-gap: 0;
 }
 .kithead {
   grid-column: span 3;
@@ -41,8 +42,10 @@ img {
   align-items: center;
   justify-content: center;
   border: solid 1px blue;
+  margin: 0 auto;
 }
 
 .ott {
   grid-column-start: 2;
+  margin: 0 auto;
 }
