@@ -1,0 +1,48 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 50px 100px 50px;
+  grid-template-rows: 100px 100px;
+}
+
+.item {
+  background-color: tomato;
+}
+
+.navbar {
+  background-color: teal;
+  /* grid-column-start: 1;
+    grid-column-end: 4; */
+  grid-column: span 3;
+  grid-row-start: 1;
+}
+
+/* fr can be used for fractions 
+see https://cssgridgarden.com/ */
+
+/* Workshop */
+img {
+  height: 200px;
+  width: 200px;
+}
+.kittens {
+  display: grid;
+  grid-template: 1fr 2fr 2fr 2fr/ 1fr 1fr 1fr;
+  border: solid 1px black;
+}
+.kithead {
+  grid-column: span 3;
+  grid-row-start: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.kit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px blue;
+}
+
+.ott {
+  grid-column-start: 2;
+}
